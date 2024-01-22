@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="/diary.css" />
+    <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+    <style>
+        .imageSlider{
+            width: 100%;
+            height: 100%;
+            /* background-image: url('../assets/z1.jpg'); */
+            background-size: 100% 100%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            animation: changeImg 15s linear infinite;
+            position: fixed;
+            bottom: 0;
+        }
+        @keyframes changeImg {
+            0%{
+              background-color: black;
+            }
+            25%{
+              background-color: seagreen;
+            }
+            50%{
+              background-color: blue;
+            }
+            75%{
+                background-color: red;
+            }
+            100%{
+              background-color: green;
+            }
+        }
+        .cover-text {
+                color: black;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotateY(0deg); /* Initial rotation */
+    transition: transform 1s;
+}
+
+.book:checked ~ .cover .cover-text {
+    transform: translate(-50%, -50%) rotateY(180deg); /* Rotate when flipped */
+}
+        
+
+        .cover h1 {
+                font-size: 2em;
+                margin-bottom: 0.5em;
+        }   
+
+        .cover p {
+        font-size: 1.2em;
+        margin: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="checkbox-cover" />
+    <input type="checkbox" id="checkbox-page1" />
+    <input type="checkbox" id="checkbox-page2" />
+    <input type="checkbox" id="checkbox-page3" />
+    <input type="checkbox" id="checkbox-page4" />
+    <input type="checkbox" id="checkbox-page5" /> 
+    <input type="checkbox" id="checkbox-page6" />
+    <input type="checkbox" id="checkbox-page7" />
+    <input type="checkbox" id="checkbox-page8" />
+    <input type="checkbox" id="checkbox-page9" />
+    <input type="checkbox" id="checkbox-page10" />
+    <input type="checkbox" id="checkbox-page11" />
+    <input type="checkbox" id="checkbox-page12" />
+    <div class="imageSlider"></div>
+    <div class="book">
+      <div class="cover">
+        <label for="checkbox-cover">
+            <div class="cover-text">
+                <h1>Diary</h1>
+                <p>Sara padh lena</p>
+              </div>
+        </label>
+      </div>
+      
+      <div class="page" id="page1">
+        <div class="front-page">
+          <p>
+           Hello Tina,<br>
+           I hope you are doing well. Assuming tune phele wala saara page padh liya hoga tabhi diary open kri hogi.
+           I want to tell you ki in 6 mhine me i miss you the most. Tumne socha hoga ki harman bhul gya hoga but nahi everyday every minute every sec you are 
+           running on my mind. Like mere pass words gather ni ho rhe feeling describe krne ko ki kaise smjhau teko sab. Meko still subah uath kr teri snaps
+           dekhna psnd hai or is thought se check krta shyd msg ho. maine beech me kha bhi tha ki ma kuch snaps sirf teko bhejta hu ki shyd baat start ho jay,
+           But nahi hui koi ni.Jab bhi mann kre ma snaps dekh leta tha ya gallery yehi sochta tha or kyuki ma insta vgarh kuch use to krta ni hu yehi option bchta mere pas,
+          "Teri tasveere rkhi hai phone me, ya shayad teri tasveero ke liye phone rkha hai".  Yeh diary me mere thoughts hai saare or thode gaane bhi hai jo ma sunta bss ki tere se relate ho jay. Likhne ko to bcha ni
+           sab likh chuka hu.<br>
+           "Basa hai tu dil me kahi,<br>
+           ya tere hone ka ehsaas hai,<br>
+           jitni bhi doori hai tujhse bhale,<br>
+           lgta hai jaise tu hi pass hai.."<br>
+           <br>
+           "Your named tattoed on my heart,<br>
+            So no matter how hard i try,<br>
+            To erase you from my memory,<br>
+            You are constantly be reminded by my heart,<br>
+            And you couldn't be replaced"<br>
+            <br>
+    
+          </p>
+          <label class="next" for="checkbox-page1"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d2.jpg" />
+          <label class="prev" for="checkbox-page1"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page2">
+        <div class="front-page">
+          <h2>Page 2</h2>
+          <p>
+            "I'll never forget you no matter of time, place, dynamics of our life.<br>
+            I know my heart will always belong to you. <br>
+            <br>
+            I've learned to accept that you're a part of me.<br>
+            Its been soo long but i still remember the sound of your voice, <br>
+            <br>
+            Still got dreams of you or how it felt when you held me. I still remember the reason why <br>
+            I ever needed you at all or why you meant soo much to me.<br>
+            <br>
+            Tu kheti thi na ki tu itna evidently show/express krta hai.. mere pass or tina nahi hai so tere <br>
+            samne hi kruga na if tere se attach hu toh because you meant soo much to me."
+          </p>
+          <label class="next" for="checkbox-page2"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d1.jpg" />
+          <label class="prev" for="checkbox-page2"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page3">
+        <div class="front-page">
+          <h2>Page 3</h2>
+          <p>
+            "I miss you <br>
+             and everything that comes with you,<br>
+             <br>
+             The sunny skies and thunderstorms<br>
+             the laughter and the tears<br>
+             <br>
+             the things i adored <br>
+             and things i hated<br>
+             i want it all back."
+             <br>
+             <br>
+             "Part of me always wait for you,<br>
+              Crave for you and wish for you,<br>
+              No matter how much time has passed"
+          </p>
+          <label class="next" for="checkbox-page3"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d3.jpg" />
+          <label class="prev" for="checkbox-page3"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page4">
+        <div class="front-page">
+          <h2>Page 4</h2>
+          <p>
+            "In the time that we had togrther,<br>
+             It was almost like we had it all, <br>
+             <br>
+             The moment you saw me, the moment our eyes met, <br> 
+             The world around us stopped, <br>
+             <br>
+             And time slowed down, <br>
+             Everything was prefect, <br>
+             <br>
+             And my soul lit up, <br>
+             But then it was over, <br>
+             <br>
+             Before i could comprehend, <br>
+             What love even meant, <br>
+             <br>
+             Now here i am, <br>
+             Stuck between the day we met, <br>
+             <br>
+             And the day you left, <br>
+             With nothing but memories, <br>
+             Of what could have been."
+          </p>
+          <label class="next" for="checkbox-page4"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d4.jpg" />
+          <label class="prev" for="checkbox-page4"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page5">
+        <div class="front-page">
+          <h2>Page 5</h2>
+          <p>
+           "I wont forget the precious memories or the way that i loved you,<br>
+            I wont forget your smile or your comforting laugh,<br>
+            <br>
+            My heart will always cherish the moments that i spend with you,<br>
+            I meant every word that i spoke to you,<br>
+            <br>
+            You truly did mean the world to me,<br>
+            I hope you know that you still do,<br>
+            <br>
+            So i will continue remember you even though you're not here."
+            <br>
+            <br>
+            "I wish i could see you again, <br>  
+             part of me still believes you're the one for me,<br> 
+             part of me believes that someday we meet again,<br>
+             part of me still dreaming to watch you in front of my eyes.""
+          </p>
+          <label class="next" for="checkbox-page5"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d5.jpg" />
+          <label class="prev" for="checkbox-page5"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page6">
+        <div class="front-page">
+          <h2>Page 6</h2>
+          <p>
+            "I wont lie, i still think about you almost every<br>
+             moment of the day..<br>
+             <br>
+             I miss you when something good happen, kyuki<br>
+             youre the one i want to share it with..<br>
+             <br>
+             I miss you all the time, but i miss you the most<br>
+             when i lay awake at 3am wondering our old times..<br>
+             <br>
+             I want to reach out to you, text you, call you and<br>
+             say i miss you but i cant kyuki, i even forget how to say a hi..<br>
+             <br>
+             I still remember the first time you texted and how<br>
+             my heart was pounding while the blood rushed<br>
+             into my cheeks..<br>
+             <br>
+             I find myself looking at our old messages, yours voice notes<br>
+             Mann to bhot krta tha ki tere se calls ki recording mang lu pr kaise baat start kru samjh ni ata tha.."
+          </p>
+          <label class="next" for="checkbox-page6"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d6.jpg" />
+          <label class="prev" for="checkbox-page6"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page7">
+        <div class="front-page">
+          <h2>Page 7</h2>
+          <p>
+           "This song is for you:-<br>
+           <br>
+           Tere bina tere bina, Aduhri si<br>
+           saari raatein hain<br>
+           Tere bina tera bina, Aur aasma mein<br>
+           Jo taray hain<br>
+           Tu waise mere, Dil mein sajha hain<br>
+           Ye taray jo<br>
+           Ab tootay toh, In khwahishon mein<br>
+           Tu hi raha hain<br>
+           Aur mishri si, Tere baatein yeh<br>
+           Yoon haule haule<br>
+           Yaad aa rahin hain, Aur meethi si<br>
+           Teri yaadein ab<br>
+           Yoon raaton mein, Sula ja rahin hain<br>
+           Tu aaj bhi<br>
+           Haan aaj bhi, Kahin na kahin<br>
+           Sapno mein raha hain"<br>
+          </p>
+          <label class="next" for="checkbox-page7"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d7.jpg" />
+          <label class="prev" for="checkbox-page7"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page8">
+        <div class="front-page">
+          <h2>Page 8</h2>
+          <p>
+            "I saw you in my dreams again, I held you a<br>
+             little tighter because I knew when i would<br>
+             wake up you'd be gone."
+             <br>
+             <br>
+             Yeh baat to tujhe bhi pta hai meko akela rhena psnd hai, but<br>
+             "I used to say, I prefer being alone,<br>
+              Until i met you.<br>
+              I would say, i hate being alone,<br>
+              Until after you.<br>
+              Now i am always alone."
+              <br>
+              <br>
+              My 11:11 wishes are still same:<br>
+              <br>
+              "I still pray for you ki jab bhi gurudware jata hu,<br>
+               *Hath jab bhi uthe tum dua bn gy*, yeh bhi kheta ki theek kra dena sab baat krva do or kabhi alg mt hone dena jaise bhi hai hum<br>
+               EK hota na defaut cheej ki sab ke sath sath yeh sab lines bhi ajati ab to waisa hai.
+               *Ab teri talash me pta chla mujhe tumse hi shuru hai raat tumse hi subah*"
+          </p>
+          <label class="next" for="checkbox-page8"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d8.jpg" />
+          <label class="prev" for="checkbox-page8"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page9">
+        <div class="front-page">
+          <h2>Page 9</h2>
+          <p>
+            "The reason i hold on is because,<br>
+             Because i am not get over you or na ma chahta hu,<br>
+             <br>
+             Or because i love you, you never believe me when i tell,<br>
+             you. but i'll say it anyway.<br>
+             <br>
+             You're everything to me,<br>
+             You're more than every sunrise,<br>
+             <br>
+             You're more than the stars that light,<br>
+             Up the sky and all the beauty within this broken world,<br>
+             <br>
+             Heaven on earth is only the begining,<br>
+             Of what you mean to me,<br>
+             <br>
+             You could never be nothing.<br>
+             You'll always be enough for me."
+          </p>
+          <label class="next" for="checkbox-page9"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d9.jpg" />
+          <label class="prev" for="checkbox-page9"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page10">
+        <div class="front-page">
+          <h2>Page 10</h2>
+          <p>
+            "I can't forget you & I know i will never be able to,<br>
+             what if you are not there with me,<br>
+             <br>
+             every moment i spent with you is part of me,<br>
+             you are within me,<br>
+             <br>
+             I have loved you, & i always do,<br>
+             My love for you is unrequited.."
+          </p>
+          <label class="next" for="checkbox-page10"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d10.jpg" />
+          <label class="prev" for="checkbox-page10"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page11">
+        <div class="front-page">
+          <h2>Page 11</h2>
+          <p>
+            I hope tu yha tk ai hogi or saara pdha hoga, yeh project ya kuch bhi khe le ma kaafi time se bna rha tha
+            socha tha bna kr duga usme sab likh duga to isme kuch baatein same ho skti hai vo ma daiy kuch na kuch 
+            likhta rheta tha teko lekr unka yeh chota sa part hai ik thodi baatein repeat hai same hogi but tu feelings samjh,
+            ik mere se bhi gltiyan hui haii but jaisa tu sochti thi kisi ko bhi lekr waisa bilkul ni tha, meri mumma still Tere
+            baare puchti hai ki kya hua baat ni hoti, theek hai vo hfte me ek baari teri baat ho hi jati mumma se, mere life me do hi women
+            khi stand krti hai life me ek mumma hai ek tu jinki baat me sun leta ya maan leta, mumma bhi bde haqq se teko kheti thi 
+            jab ma kuch sunta ni tha unko bhi pta tha meri ni to teri to sun hi lega kyuki jaise baatein maine mumma ko btai thi
+            ya rote hue kabhi boli thi ya mere papa ka example lekr fir smjhai thi to ma hi janta vo situation, tu ghar bhi jab ai thi
+            mumma ne teko bta diya tha na mumma aise ki vo kisi ko kuch btati aise but unhone kuch soch kr hi btaya tha, mujhe dosti ya kuch jo tujhe
+            theek lge krle, mere efforts jo ma krta ya jo bhi mera nature khe le ya tu, maine 6 mhine me try krke dekh liya sab meko 
+            nahi psnd kisi aise se baat krna naa efforts ate kisi ke liye, ik tujhe yeh baat samjh ni hogi bss itna samjh ki mere efforts
+            se tu preshan na ho maine aj tk jo kra kabhi yeh soch kr ni kra ki teko kaisa lgega mere pas ek hi achi dost thi and thats you,
+            mujhe nahi khoni vohh. Ek line tune boli tha Dosti or classmates me frk hota dost tumhari problem me bhi sath deta hai or classmates ni
+            maine
+          </p>
+          <label class="next" for="checkbox-page11"
+            ><i class="fas fa-chevron-right"></i
+          ></label>
+        </div>
+        <div class="back-page">
+          <img src="/d11.jpg" />
+          <label class="prev" for="checkbox-page11"
+            ><i class="fas fa-chevron-left"></i
+          ></label>
+        </div>
+      </div>
+      <div class="page" id="page12">
+        <div class="front-page">
+          <h2>Page 12</h2>
+          <p>
+            is baat pr bht dhyan diya tha fir lga sahi me, ma dosto ke sath bhi aise hi krta hu jaise tere sath tha like efforts vgarah 
+            koi kitne haqq se bole maa kr deta tha cheeje tujhe lgta tha ma baat sun leta saari ya jo tu bolti vo krleta aisa ni hai
+            mujhe acha lgta to krdeta but isse tu apne app se relate mt krr please, maine teko yeh baat pheli bhi btai thi apni ki mere papa ki 
+            jab se death hui thi meri mumma or ma hi sath rhe hai maine delhi ya lucknow me bht kam dost bnay ya jo bhi but meko unke sath rhena
+            hi psnd hai ma ho jata emotionls bchpn mera saara time ghar me akele rhena me rha hai, meri mumma kheti hai kisi ldki ke sath bura ni krna
+            tune apni mumma ko dekha hai na bs yehi kuch baatein haii jo sirf tere tk hi rheti hai mere liye like convo me btai ho. Ma still tere se milna chahta hu dosti ya jo bhi 
+            meko tu pyaari hai tera sath pyaara hai mujhe dosti ni khoni if teko sab theek lgta hai ya jo bhi to if tu chahe to mil liyo baat vgarah 
+            krliyo agar teko lgta ki theeke sab to bta diyo vrna koi dikkat ni tu reply na kriyo iska. And yeh ma apne resume me project hi sahi lga du? if acha lga 
+            ya jo bhi milegi ya baat vgarah hogi to lga duga resume me agar reply ni aya tera to samjh jauga theeke. 
+            <br>
+            <br>
+            Tommy's heart will always belong to you, even if you're not there.
+            Thanku Soo Much For Everything.
+          </p>
+        </div>
+      </div>
+      <div class="back-cover"></div>
+    </div>
+  </body>
+</html>
